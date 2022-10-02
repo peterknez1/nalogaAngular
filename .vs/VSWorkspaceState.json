@@ -1,0 +1,13 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\AnguralApp",
+    "\\AnguralApp\\src",
+    "\\AnguralApp\\src\\app",
+    "\\AnguralApp\\src\\app\\user-details",
+    "\\AnguralApp\\src\\app\\user-page",
+    "\\AnguralApp\\src\\assets"
+  ],
+  "SelectedNode": "\\AnguralApp\\src\\app\\app-routing.module.ts",
+  "PreviewInSolutionExplorer": false
+}

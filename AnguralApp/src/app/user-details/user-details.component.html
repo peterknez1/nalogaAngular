@@ -1,0 +1,11 @@
+
+<h1 style="margin: 2rem">User Details</h1>
+<div class="card" style="width: 18rem; margin: 2rem">
+  <img class="card-img-top" style="height: 100%" src="{{ user.avatar }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ user.first_name + " " + user.last_name}}</h5>
+    <p class="card-text">{{ user.email }}</p>
+    <p class="card-text">{{userDetails}}</p>
+    <a href=# routerLink="/users" class="btn btn-primary">Back</a>
+  </div>
+</div>
