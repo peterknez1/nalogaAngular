@@ -48,5 +48,9 @@ export class ApiServiceService {
     return JSON.parse(localStorage.getItem(key)!);
   }
 
+  removeData(key: string): any {
+    localStorage.removeItem(key);
+  }
+
 
 }

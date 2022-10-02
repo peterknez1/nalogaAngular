@@ -26,11 +26,12 @@ export class UserPageComponent implements OnInit {
     this.httpService.register(newUser);
   }
 
-  funLogin(email: any, password: any): void {
-    console.log("fun login");
-    var loginCredentials: object = { "email": email, "password": password };
-    this.httpService.login(loginCredentials);
+  funLogout(): void {
+    console.log("fun logout");
+    this.httpService.removeData('token');
 
   }
+
+
 
 }
