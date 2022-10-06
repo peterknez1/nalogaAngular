@@ -23,11 +23,11 @@ export class ApiServiceService {
   }
 
 
-  register(params: object) {
+  register(params: object): Observable<RegisterResponse> {
     console.log("register service");
     var headers = new HttpHeaders({ 'Content-Type': 'application/json' });
     console.log(params);
-    return this.http.post(this.url + "register", params, { headers }).subscribe();
+    return this.http.post<RegisterResponse>(this.url + "register", params, { headers });
   }
 
   login(params: object): Observable<RegisterResponse> {

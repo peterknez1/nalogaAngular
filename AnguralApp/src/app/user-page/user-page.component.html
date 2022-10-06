@@ -10,7 +10,7 @@
               <div class="d-flex flex-wrap">
 
                 <ng-template ngFor let-item [ngForOf]="usersList" let-i="index">
-                  <div class="card" style="width: 18rem; margin: 2rem">
+                  <div class="card" #userCard style="width: 18rem; margin: 2rem">
                     <img class="card-img-top" style="height: 100%" src="{{ usersList[i].avatar }}" alt="Card image cap">
                     <div class="card-body">
                       <h5 class="card-title">{{ usersList[i].first_name + " " + usersList[i].last_name}}</h5>
@@ -22,7 +22,7 @@
 
               </div>
               <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                <button type="button" routerLink="/login" (click)="funLogout()" class="btn btn-primary btn-lg" style="margin: 1rem">Logout</button>
+                <button type="button" routerLink="/login" (click)="funLogout()" class="btn btn-primary btn-lg">Logout</button>
               </div>
             </div>
           </div>
